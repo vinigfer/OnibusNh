@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyCustomTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle" tools:targetApi="11">@style/MyActionBarTheme</item>
+        <item name="android:actionMenuTextColor" tools:targetApi="11">@color/white</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBarTheme</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+    
+    <style name="MyActionBarTheme" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/green</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/green</item>
+
+        <item name="android:titleTextStyle" tools:targetApi="11">@style/TitleColor</item>
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/TitleColor</item>
+    </style>
+
+    <style name="TitleColor" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
