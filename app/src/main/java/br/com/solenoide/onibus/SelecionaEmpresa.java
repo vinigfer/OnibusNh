@@ -199,7 +199,7 @@ public class SelecionaEmpresa extends ActionBarActivity implements OnClickListen
 			for (String sentidoAtual : sentidoDaLinha) {
 				for (String diaAtual : diasUteisSabadosEDomingos) {
 					for (String idLinhaAtual : idsDasLinhas)
-						dbHelper.gravaRequestsPendentes("Futura", "http://www.viacaofutura.com.br/processa_linha.php",
+						dbHelper.gravaRequestsPendentes("Futura", "https://www.viacaofutura.com.br/processa_linha.php",
 														idLinhaAtual, diaAtual, sentidoAtual, "");
 				}
 			}
